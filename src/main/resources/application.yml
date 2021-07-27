@@ -1,0 +1,35 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /book
+
+spring:
+  data:
+    redis:
+      repositories:
+        enabled: false
+  datasource:
+    hikari:
+      minimum-idle: 3
+      max-lifetime: 120000
+      maximum-pool-size: 10
+      connection-test-query: SELECT 1
+    name: mysql
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://123.57.187.51:26910/book?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&autoReconnect=true
+    username: root
+    password: D^!0pVBpu
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: false
+  redis:
+    host: 123.57.187.51
+    port: 26911
+    password: Czpxw9daj
+    database: 1
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+

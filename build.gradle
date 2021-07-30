@@ -24,12 +24,13 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-redis'
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
     runtimeOnly 'mysql:mysql-connector-java'
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
-    implementation group: 'com.fasterxml.jackson.module', name: 'jackson-module-kotlin', version: '2.12.3'
+    implementation "com.fasterxml.jackson.module:jackson-module-kotlin"
 
 }
 

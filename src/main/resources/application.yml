@@ -33,3 +33,5 @@ spring:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
 
+book:
+  domain: http://localhost:8080

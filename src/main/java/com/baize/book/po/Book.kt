@@ -1,7 +1,6 @@
-package com.baize.book.pojo
+package com.baize.book.po
 
 import com.baize.book.common.BookTypeEnum
-import lombok.Data
 import java.time.LocalDateTime
 import javax.persistence.*
 
@@ -40,9 +39,24 @@ class Book {
     var introduce: String = "暂无介绍"
 
     /**
-     * 最新章节
+     * 最新章节id
      */
-    var latestChapter: String? = null
+    var latestChapterId: Int? = null
+
+    /**
+     * 最新章节名称
+     */
+    var latestChapterName: String? = null
+
+    /**
+     * 搜索字段
+     */
+    var search: String = bookName
+
+    /**
+     * 阅读量
+     */
+    var readNumber: Int = 0
 
     /**
      * 更新时间
